@@ -1,0 +1,25 @@
+const buttons = document.querySelectorAll('.button');
+const body = document.querySelector('body');
+
+console.log(buttons);
+
+buttons.forEach(function(button){
+    button.addEventListener('click', function(e){
+        console.log(e.target);
+        if(e.target.id === 'grey'){
+            body.style.backgroundColor = e.target.id;
+        }
+        if(e.target.id === 'lightgreen'){
+            body.style.backgroundColor = e.target.id;
+        }
+        if(e.target.id === 'aqua'){
+            body.style.backgroundColor = e.target.id;
+        }
+        if(e.target.id === 'black'){
+            body.style.backgroundColor = e.target.id;
+        }
+        if(e.target.id === 'white'){
+            body.style.backgroundColor = e.target.id;
+        }
+    })
+})
